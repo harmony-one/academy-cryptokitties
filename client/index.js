@@ -1,9 +1,9 @@
-var web3 = new Web3(Web3.givenProvider);
+var web3 = new Web3("https://api.s0.b.hmny.io");
 var instance;
 var user;
 var dnaStr = "457896541299";
 
-var contract = "0x3A18BBB8046142c44E86C4a17A2a8EE12E3bDcf8";
+var contract = "0xB728e48a1CD997714932864F52B85c5297b2DE26";
 var contractOwner;
 
 $(document).ready(function () {

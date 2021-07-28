@@ -1,5 +1,7 @@
 # CryptoKitties clone project
 
+![](crypto-kitties.png)
+
 ## Starter kit
 
 ### install the dependencies
@@ -13,6 +15,8 @@ touch .secret
 
 ### start your local ganache
 
+For testnet deployment you can skip this step. 
+
 ```
 ganache-cli --port 8545 --accounts 5  --mnemonic 'gesture rather obey video awake genuine patient base soon parrot upset lounge' --networkId 5777
 ```
@@ -20,7 +24,7 @@ ganache-cli --port 8545 --accounts 5  --mnemonic 'gesture rather obey video awak
 ### migrate the main contract to your local node
 
 ```
-truffle migrate --network ganache
+truffle migrate --network harmony
 ```
 
 ### run your local server

@@ -86,6 +86,15 @@ module.exports = {
       // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
       // network_id: 2111,   // This network is yours, in the cloud.
       // production: true    // Treats this network as if it was a public net. (default: false)
+    },
+    harmony: {
+      provider: () => {
+        return new HDWalletProvider({
+          privateKeys: [mnemonic],
+          providerOrUrl: 'https://api.s0.b.hmny.io',
+        });
+      },
+      network_id: 1666700000,
     }
   },
 
